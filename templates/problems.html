@@ -1,0 +1,86 @@
+{% extends "base.html" %}
+{% block title %} HITCON GIRLS CTF - Chanllenges{% endblock title %}
+{% block content %}
+<div class="row">
+	<ul class="nav nav-tabs">
+		<li class="active"><a href="#misc" data-toggle="tab" aria-expanded="true">Misc</a></li>
+		<li class=""><a href="#web" data-toggle="tab" aria-expanded="false">Web</a></li>
+		<li class="disabled"><a>Crypto</a></li>
+		<li class="disabled"><a>Stego</a></li>
+		<li class="disabled"><a>Reverse</a></li>
+		<li class="disabled"><a>Pwn</a></li>
+	</ul>
+	<div id="myTabContent" class="tab-content">
+		<div class="tab-pane fade active in" id="misc">
+			<div class="col-lg-3">
+				<div class="problem-info" data-toggle="modal" data-target="#mymodal">
+					<div class="problem-body iceland-font">
+						<span>Proplem title Misc</span><br>
+						<span>Point</span><br>
+					</div>
+				</div>
+			</div>
+			<div class="modal fade" id="mymodal" role="dialog">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+						  <h4 class="modal-title iceland-font">Proplem title [Score]</h4>
+						</div>
+						<div class="modal-body inconsola-font">
+							<p>Problem Decreiption</p>
+					  </div>
+					  <div class="modal-footer">
+							<div class="form-group inconsola-font">
+								<div class="input-group">
+									<span class="input-group-addon">:~$ </span>
+									<input type="text" class="form-control">
+										<span class="input-group-btn">
+											<button class="btn btn-default" type="button">Sumit Flag</button>
+										</span>
+								</div>
+							</div>
+						</div>
+			    </div>
+			  </div>
+			</div>
+		</div>
+
+		<div class="tab-pane fade" id="web">
+			<div class="tab-pane fade active in" id="web">
+				<div class="col-lg-3">
+					<div class="problem-info" data-toggle="modal" data-target="#web1">
+						<div class="problem-body iceland-font">
+							<span>Proplem title Web</span><br>
+							<span>Point</span><br>
+						</div>
+					</div>
+				</div>
+				<div class="modal fade" id="web1" role="dialog">
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+						  	<h4 class="modal-title iceland-font">Proplem title [Score]</h4>
+							</div>
+							<div class="modal-body inconsola-font">
+								<p>Problem Decreiption</p>
+					  	</div>
+					  	<div class="modal-footer">
+								<div class="form-group inconsola-font">
+									<div class="input-group">
+										<span class="input-group-addon">:~$ </span>
+										<input type="text" class="form-control">
+										<span class="input-group-btn">
+											<button class="btn btn-default" type="button">Sumit Flag</button>
+										</span>
+									</div>
+								</div>
+							</div>
+			    	</div>
+			  	</div>
+				</div>
+		</div>
+	</div>
+</div>
+{% endblock content %}

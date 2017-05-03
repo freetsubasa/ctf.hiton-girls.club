@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+{% block title %} HITCON GIRLS CTF - Rank {% endblock title %}
+{% block content %}
+<div class="row">
+	<div class="col-md-10 col-md-offset-1" id="rank-table">
+		<table class="table table-striped table-hover">
+			<thead>
+				<tr>
+					<th>#</th>
+					<th>Name</th>
+					<th>Score</th>
+					<th>Comment</th>
+					<th>Last Submit</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>1</td>
+					<td class="name">Bob</td>
+					<td class="score">100</td>
+					<td class="comment">Hello world !</td>
+					<td>2017-5-3 12:03</td>
+				</tr>
+				<tr>
+					<td>2</td>
+					<td class="name">Alice</td>
+					<td class="score">90</td>
+					<td class="comment">null</td>
+					<td>2017-5-3 12:08</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</div>
+{% endblock content %}
