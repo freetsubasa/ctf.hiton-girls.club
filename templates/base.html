@@ -34,10 +34,18 @@
 						<li><a href="/rank">Ranking</a></li>
 						<li><a href="/lecture">Lecture</a><li>
 					</ul>
+					{% if current_user.is_authenticated %}
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="/user/<name>">Account</a></li>
+						<li><a href="/logout">logout</a></li>
+					</ul>
+					{% endif %}
+					{% if not current_user.is_authenticated %}
 					<ul class="nav navbar-nav navbar-right">
             <li><a href="/register">Register</a></li>
 						<li><a href="/login">login</a></li>
           </ul>
+					{% endif %}
         </div>
       </div>
     </div>
